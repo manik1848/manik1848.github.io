@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        width: 1200px; height: 630px; overflow: hidden;
+        background: #0b0d11; color: #e6e9ef;
+        font-family: 'Inter', sans-serif;
+        display: flex; flex-direction: column; justify-content: center;
+        padding: 74px 80px; position: relative;
+      }
+      .grid {
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(to right, #1e232c 1px, transparent 1px),
+          linear-gradient(to bottom, #1e232c 1px, transparent 1px);
+        background-size: 60px 60px;
+        -webkit-mask-image: radial-gradient(ellipse 75% 70% at 15% 0%, #000 20%, transparent 75%);
+      }
+      .inner { position: relative; }
+      .role {
+        font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 500;
+        letter-spacing: 3.6px; text-transform: uppercase; color: #22d3ee;
+      }
+      h1 { font-size: 78px; font-weight: 700; letter-spacing: -2px; margin-top: 20px; }
+      p.pitch { font-size: 29px; line-height: 1.45; color: #b7c0cd; margin-top: 26px; max-width: 940px; }
+      .rule { width: 92px; height: 4px; background: #22d3ee; margin-top: 40px; border-radius: 2px; }
+      .foot {
+        margin-top: 34px; font-family: 'JetBrains Mono', monospace;
+        font-size: 21px; color: #8b95a5; display: flex; gap: 18px;
+      }
+      .foot span.sep { color: #39414f; }
+    </style>
+  </head>
+  <body>
+    <div class="grid"></div>
+    <div class="inner">
+      <div class="role">{{EYEBROW}}</div>
+      <h1 style="font-size: {{TITLE_SIZE}}">{{TITLE}}</h1>
+      <p class="pitch">
+{{SUBTITLE}}
+      </p>
+      <div class="rule"></div>
+      <div class="foot">{{FOOT}}</div>
+    </div>
+  </body>
+</html>

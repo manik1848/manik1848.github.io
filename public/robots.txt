@@ -1,3 +1,4 @@
-User-agent: * 
-Disallow:
-Sitemap: http://pranjalis.me/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://manik1848.github.io/sitemap.xml
